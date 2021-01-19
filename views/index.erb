@@ -1,4 +1,10 @@
-<h1> "My name is Salar <%= ["Amigo", "Oscar", "Viking"].sample %>"</h1>
-"<div style='border: 3px solid green'>
+<% if @name %>
+<h1> "My name is <%= @name %>"</h1>
+<% end %>
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+<div style='border: 3px solid red'>
 <img src='https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'>
-</div>"
+</div>
